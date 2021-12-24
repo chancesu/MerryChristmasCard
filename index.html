@@ -114,6 +114,40 @@
     font-size:16px;
     color:#fff;
   }
+  @media screen and (max-width: 500px) { 
+    #tree{
+      top:10vw;
+      width:60vw;
+      height: 60vw;
+    }
+    #tree .tree{
+      width:60vw;
+      height:60vw;
+      transform: translateY(calc(20vw * var(--j)));
+    }
+    #tree .tree span{
+      transform: rotateY(calc(90deg * var(--i))) translateZ(30vw) rotateX(29deg);
+    }
+    #tree .tree.bottom{
+      top:auto;
+      bottom:-100vw;
+      left:50%;
+      margin-left:-10vw;
+    }
+    #tree .tree.bottom span{
+      width:20vw;
+      height:40vw;
+      transform: rotateY(calc(90deg * var(--i))) translateZ(10vw);
+    }
+    #tree .star{
+      width:12vw;
+      height:12vw;
+    }
+    #tree .title{
+      font-size:14vw;
+      transform: translate(20%, -50%) rotateY(90deg);
+    }
+  }
   </style>
 </head>
 <body>
